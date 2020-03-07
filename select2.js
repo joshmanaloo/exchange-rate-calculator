@@ -3,9 +3,9 @@ $(document).ready(function() {
     if (!state.id) {
       return state.text;
     }
-    var baseUrl = "/img/svg";
+    var baseUrl = "img/svg";
     var $state = $(
-      '<span> ' + state.text + ' <img src="' + baseUrl + '/' + state.element.value.toLowerCase() + '.svg" class="img-flag" width="25" /></span>'
+      '<span> ' + state.text + ' <img src="' + baseUrl + '/' + state.element.value.toLowerCase() + '.svg" class="img-flag" width="25"  /></span>'
     );
     return $state;
   };
