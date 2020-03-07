@@ -60,29 +60,6 @@ p{
   border-radius: 5px;
 }
 
-.currency:before { /*A solution I found in stack overflow for the arrow on the select tag*/
-    content: "";
-    position: absolute;
-     left: 48px;
-    /* top: 8px; */
-    width: 0;
-    height: 0;
-    border-left: 9px solid transparent;
-    border-right: 9px solid transparent;
-    border-top: 9px solid #f00;
-}
-
-.currency:after { /*A solution I found in stack overflow for the arrow on the select tag*/
-    content: "";
-    position: absolute;
-    left: 48px;
-   /* top: 8px; */
-    width: 0;
-    height: 0;
-    border-left: 9px solid transparent;
-    border-right: 9px solid transparent;
-    border-top: 9px solid #333;
-}
 
 .currency input{
   border:0;
@@ -103,8 +80,17 @@ p{
   padding: 0px 10px;
 }
 
+.select2-results__option { /*Background color for select2 dropdown*/
+    background-color: #D3D3D3;
+}
+
 select:focus, input:focus, button:focus{ /*The focus outline blue of the select*/
   outline: 0;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: yellowgreen;
+    color: white;
 }
 
 @media (max-width: 600px){
