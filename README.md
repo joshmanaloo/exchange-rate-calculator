@@ -27,7 +27,7 @@ Text Editor:
 
 ## Future plans moving forward..
 - ~~Adding country flags on each currency code to help user determine which currency it states~~
-- Adding a dark mode feature to change theme of the website
+- ~~Adding a dark mode feature to change theme of the website~~
 - Adding multiple currency views, so that you can check different conversion rates in more than just one country
 
 ## Contributing
