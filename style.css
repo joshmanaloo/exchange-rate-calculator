@@ -1,15 +1,27 @@
-:root{
+:root {
+  /* --primary-color: #5FBAA7; */
   --primary-color: #5FBAA7;
+  /* --primary-color-dark: #FFF; */
+  --background-color: #f4f4f4;
+  /* --background-color-dark: #181818; */
+  --text-color: #181818;
 }
 
-*{
-  box-sizing: border-box; /*to fix the sizing of our form elements*/
+.darkmode {
+  --primary-color: #FFF;
+  --background-color: #181818;
+  --text-color: #f4f4f4;
 }
 
-body{
+* {
+  box-sizing: border-box;
+  /*to fix the sizing of our form elements*/
+}
+
+body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
-  display:flex;
+  background-color: var(--background-color);
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -18,83 +30,105 @@ body{
   padding: 20px;
 }
 
-h1{
+h1 {
   color: var(--primary-color);
 }
 
-p{
+p {
+  color: var(--text-color);
   text-align: center;
 }
 
-.btn{
+.fa-lightbulb {  /* Light Build Icon*/
+  font-size: 35px;
+  color: var(--text-color);
+}
+
+#dark-mode-toggle {
+  position: fixed;
+  right: 45px;
+  top: 35px;
+}
+
+#rate {
+  /*The rate font color*/
+  color: var(--text-color);
+}
+
+#change-theme p {
+  margin: 0;
+  color: red;
+}
+
+.btn {
   color: #fff;
-  background: var(--primary-color);
+  background: #5FBAA7;
   cursor: pointer;
   border-radius: 5px;
   font-size: 12px;
   padding: 5px 12px;
 }
 
-.money-img{
+.money-img {
   width: 150px;
 }
 
-.currency{
+.currency {
   padding: 40px 0;
-  display: flex; /*To make sure they are both aligned*/
+  display: flex;
+  /*To make sure they are both aligned*/
   align-items: center;
   justify-content: space-between;
-
   position: relative;
 }
 
-.currency select{
+.currency select {
   padding: 10px 20px 10px 10px;
-  -moz-appearance: none; /*To take account into other devices and web browsers*/
+  -moz-appearance: none;
+  /*To take account into other devices and web browsers*/
   -webkit-appearance: none;
   appearance: none;
-
   border: 1px solid #dedede;
   font-size: 16px;
-
   border-radius: 5px;
 }
 
-
-.currency input{
-  border:0;
+.currency input {
+  border: 0;
   background-repeat: transparent;
   font-size: 30px;
   text-align: right;
 }
 
-.swap-rate-container{
+.swap-rate-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.rate{
+.rate {
   color: var(--primary-color);
   font-size: 14;
   padding: 0px 10px;
 }
 
-.select2-results__option { /*Background color for select2 dropdown*/
-    background-color: #D3D3D3;
+.select2-results__option {
+  /*Background color for select2 dropdown*/
+  background-color: #D3D3D3;
 }
 
-select:focus, input:focus, button:focus{ /*The focus outline blue of the select*/
+select:focus, input:focus, button:focus {
+  /*The focus outline blue of the select*/
   outline: 0;
 }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-    background-color: yellowgreen;
-    color: white;
+  background-color: yellowgreen;
+  color: white;
 }
 
-@media (max-width: 600px){
-  .currency input{
+@media (max-width: 600px) {
+  .currency input {
     width: 200px;
   }
 }

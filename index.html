@@ -5,19 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- <script src="https://kit.fontawesome.com/ddefa8fd18.js" crossorigin="anonymous"></script> -->
+  <!-- Load FontSwesome -->
+  <script src="https://kit.fontawesome.com/ddefa8fd18.js" crossorigin="anonymous"></script>
   <title>Exchange Rate Calculator</title>
   <link rel="stylesheet" href="style.css">
 
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script> <!-- Load jQuery -->
-  <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" /> <!--Load Select2 -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+  <!--Load Select2 -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
 
 
 </head>
 
 <body>
-  <img src="img/money.png" alt="" class="money-img">
+
+  <div id='dark-mode-toggle'>
+    <i class="fas fa-lightbulb"></i>
+  </div>
+
+
+  <img src="img/moneyDark.png" alt="" class="money-img">
   <h1>Exchange Rate Calculator</h1>
   <p>Choose the currency and the amounts to get the exchange rate</p>
 
@@ -154,8 +162,9 @@
   </div>
 
 
-  <script type="text/javascript" src="select2.js"></script> <!-- JS for select2 jquery library-->
-  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="js/select2.js"></script> <!-- JS for select2 jquery library-->
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/darkMode.js"></script>
   <!--Load initial js-->
 </body>
 
