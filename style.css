@@ -1,9 +1,6 @@
 :root {
-  /* --primary-color: #5FBAA7; */
   --primary-color: #5FBAA7;
-  /* --primary-color-dark: #FFF; */
   --background-color: #f4f4f4;
-  /* --background-color-dark: #181818; */
   --text-color: #181818;
 }
 
@@ -39,7 +36,8 @@ p {
   text-align: center;
 }
 
-.fa-lightbulb {  /* Light Build Icon*/
+.fa-lightbulb {
+  /* Light Build Icon*/
   font-size: 35px;
   color: var(--text-color);
 }
@@ -82,17 +80,6 @@ p {
   position: relative;
 }
 
-.currency select {
-  padding: 10px 20px 10px 10px;
-  -moz-appearance: none;
-  /*To take account into other devices and web browsers*/
-  -webkit-appearance: none;
-  appearance: none;
-  border: 1px solid #dedede;
-  font-size: 16px;
-  border-radius: 5px;
-}
-
 .currency input {
   border: 0;
   background-repeat: transparent;
@@ -106,6 +93,10 @@ p {
   justify-content: space-between;
 }
 
+.swap-rate-container #clear {
+  margin-right: 185px;
+}
+
 .rate {
   color: var(--primary-color);
   font-size: 14;
@@ -117,18 +108,58 @@ p {
   background-color: #D3D3D3;
 }
 
-select:focus, input:focus, button:focus {
-  /*The focus outline blue of the select*/
-  outline: 0;
-}
-
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
   background-color: yellowgreen;
   color: white;
 }
 
+input {
+  margin-left: 25px;
+  /* padding: 0 10px; */
+  width: 80%;
+}
+
 @media (max-width: 600px) {
+
+  #dark-mode-toggle {
+    position: fixed;
+    right: 25px;
+    top: 25px;
+  }
+
+  h1 {
+    font-size: 1.7em;
+  }
+
+  .swap-rate-container #clear {
+    margin-right: 35px;
+  }
+
   .currency input {
-    width: 200px;
+    width: 60%;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 1.2em;
+  }
+  .currency input {
+    font-size: 16px;
+  }
+
+  .btn{
+    padding: 3px 6px;
+  }
+
+  .swap-rate-container #clear {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .swap-rate-container #clear {
+    margin-right: 0px;
   }
 }
